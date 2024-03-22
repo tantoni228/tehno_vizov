@@ -74,5 +74,5 @@ graph.connect(b,d,4)
 graph.connect(c,d,7)
 graph.connect(c,f,10)
 graph.connect(d,e,3)
-graph.print_graph()
-print([(weight, [n.data for n in node]) for (weight, node) in dijkstra(graph, a)])
+graph.print_graph()                                                      #1 кортеж = путь к 1 вершине ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+print([(weight, [n.data for n in node]) for (weight, node) in dijkstra(graph, a)]) # вывод в формате [(расст., [путь]), (расст., [путь]), (расст., [путь]), ...]
